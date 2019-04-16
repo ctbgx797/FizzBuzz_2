@@ -3,23 +3,19 @@ number = int(input("1つの自然数を入れてね: "))
 
 def fizzbuzz_convert(number):
     if number % 15 == 0:
-        print("FizzBuzz")
+        return "FizzBuzz"
     elif number % 3 == 0:
-        print("Fizz")
+        return "Fizz"
     elif number % 5 == 0:
-        print("Buzz")
+        return "Buzz"
     else:
-        print(str(number))
+        return str(number)
 
 
-fizzbuzz_convert(1)
-fizzbuzz_convert(2)
-fizzbuzz_convert(3)
-fizzbuzz_convert(4)
-fizzbuzz_convert(5)
-fizzbuzz_convert(6)
-fizzbuzz_convert(7)
-fizzbuzz_convert(8)
-fizzbuzz_convert(11)
-fizzbuzz_convert(24)
+result = fizzbuzz_convert(1)
+print(result)
+
+result = fizzbuzz_convert(3)
+print(result)
+
 fizzbuzz_convert(100)
