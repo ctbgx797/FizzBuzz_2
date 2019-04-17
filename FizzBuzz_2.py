@@ -1,6 +1,3 @@
-number = int(input("1つの自然数を入れてね: "))
-
-
 def fizzbuzz_convert(number):
     if number % 15 == 0:
         return "FizzBuzz"
@@ -14,5 +11,7 @@ def fizzbuzz_convert(number):
     return str(number)
 
 
-result = fizzbuzz_convert(1)
-print(result)  # 1
+for number in range(1, 101):
+    result = fizzbuzz_convert(number)
+
+    print(result)
